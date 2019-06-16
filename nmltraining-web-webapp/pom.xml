@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>internal.nml</groupId>
+    <artifactId>nmltraining-web</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+  <artifactId>nmltraining-web-webapp</artifactId>
+  <name>nmltraining-web: webapp</name>
+  <packaging>war</packaging>
+  <dependencies>
+    <!--
+     Add your project specific dependencies here:
+     A custom webapp typically is based on a magnolia webapp. The most simple and reduced bundle to start with is the "magnolia-empty-webapp" (see "option i" below).
+     To see a complete list of preconfigured Magnolia webapps, have a look at https://documentation.magnolia-cms.com/display/DOCS/Bundles+and+webapps
+     => Please just use one of the four below listed options!
+     Make sure to use the appropriate option (A or B) in the parent pom
+    -->
+
+    <!-- option i - magnolia-empty-webapp -->
+    <!-- Dependencies versions are already imported by parent pom. Requires "Option A" in the parent pom. -->
+    <dependency>
+      <groupId>info.magnolia</groupId>
+      <artifactId>magnolia-empty-webapp</artifactId>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia</groupId>
+      <artifactId>magnolia-empty-webapp</artifactId>
+      <type>pom</type>
+    </dependency>
+
+
+    <!-- option ii - magnolia-community-webapp -->
+    <!-- Dependencies versions are already imported by parent pom. Requires "Option A" in the parent pom. -->
+    <!--
+    <dependency>
+      <groupId>info.magnolia.bundle</groupId>
+      <artifactId>magnolia-community-webapp</artifactId>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.bundle</groupId>
+      <artifactId>magnolia-community-webapp</artifactId>
+      <type>pom</type>
+    </dependency>
+    -->
+
+
+    <!-- option iii - magnolia-dx-core-webapp -->
+    <!-- Dependencies versions are already imported by parent pom. Requires "Option B" in the parent pom. -->
+    <!--
+    <dependency>
+      <groupId>info.magnolia.dx</groupId>
+      <artifactId>magnolia-dx-core-webapp</artifactId>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.dx</groupId>
+      <artifactId>magnolia-dx-core-webapp</artifactId>
+      <type>pom</type>
+    </dependency>
+    -->
+	<!-- option iv - magnolia-enterprise-pro-webapp -->
+    <!-- Dependencies versions are already imported by parent pom. Requires "Option B" in the parent pom. -->
+        <dependency>
+          <groupId>info.magnolia.eebundle</groupId>
+          <artifactId>magnolia-enterprise-pro-webapp</artifactId>
+          <type>war</type>
+        </dependency>
+        <dependency>
+          <groupId>info.magnolia.eebundle</groupId>
+          <artifactId>magnolia-enterprise-pro-webapp</artifactId>
+          <type>pom</type>
+        </dependency>
+ 
+    <!-- Additional EE modules -->
+        <dependency>
+            <groupId>info.magnolia.eebundle</groupId>
+            <artifactId>magnolia-enterprise-pro-product-descriptor</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia.multisite</groupId>
+            <artifactId>magnolia-module-multisite</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia.personalization</groupId>
+            <artifactId>magnolia-personalization-components</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia.personalization</groupId>
+            <artifactId>magnolia-personalization-widget</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia.widgetset</groupId>
+            <artifactId>magnolia-vaadin-widgetset-pro</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia.advancedcache</groupId>
+            <artifactId>magnolia-advanced-cache</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia.advancedcache</groupId>
+            <artifactId>magnolia-advanced-cache-app</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia.advancedcache</groupId>
+            <artifactId>magnolia-advanced-cache-dpc</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia.advancedcache</groupId>
+            <artifactId>magnolia-advanced-cache-personalization</artifactId>
+        </dependency>
+        <!-- Magnolia content editor modules -->
+        <dependency>
+            <groupId>info.magnolia.block</groupId>
+            <artifactId>magnolia-block-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia.editor</groupId>
+            <artifactId>magnolia-content-editor-widgetset</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia.editor</groupId>
+            <artifactId>magnolia-content-editor</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia.block</groupId>
+            <artifactId>magnolia-block-templating</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia</groupId>
+            <artifactId>magnolia-link-unfurl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia.editor</groupId>
+            <artifactId>stories-app</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia.contenttags</groupId>
+            <artifactId>magnolia-content-tags-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>info.magnolia.contenttags</groupId>
+            <artifactId>magnolia-content-tags-ui</artifactId>
+        </dependency>
+       
+        <dependency>
+            <groupId>info.magnolia.types</groupId>
+            <artifactId>magnolia-content-types</artifactId>
+            <version>1.0</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>internal.nml</groupId>
+			<artifactId>nmltraining-web-base</artifactId>
+			<version>1.0-SNAPSHOT</version>
+        </dependency>
+        
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <configuration>
+          <!-- exclude jars copied "physically" from the webapp overlay - so we only get those resolved by Maven's dependency management -->
+          <dependentWarExcludes>WEB-INF/lib/*.jar</dependentWarExcludes>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

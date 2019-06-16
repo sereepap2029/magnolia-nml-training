@@ -1,0 +1,2 @@
+templateScript: /nmltraining-web-base/templates/components/dummy-component.ftl
+renderType: freemarker

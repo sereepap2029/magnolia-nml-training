@@ -1,0 +1,3 @@
+templateScript: /nmltraining-web-base/templates/components/atom1.ftl
+dialog: nmltraining-web-base:components/d_atom1
+renderTypes: freemaker

@@ -1,0 +1,40 @@
+dialog: mte:pages/pageProperties
+class: info.magnolia.module.site.templates.PageTemplateDefinition
+
+visible: true
+renderType: site
+type: feature
+areas:
+  main:
+    templateScript: /nmltraining-web-base/templates/pages/areas/contentContainer.ftl
+    type: list
+    parameters:
+      cssClass: container
+    availableComponents:
+      form:
+        id: form:components/form
+      html:
+        id: mtk:components/html
+      video:
+        id: mtk:components/video
+      textAndImage:
+        id: mtk:components/textImage
+      link:
+        id: mtk:components/link
+      linkList:
+        id: mtk:components/linkList
+      image:
+        id: mtk:components/image
+      teaser:
+        id: mtk:components/teaser
+      pageIntro:
+        id: mtk:components/pageIntro      
+      Atom1:
+        id: nmltraining-web-base:components/atom1    
+#      google-maps:
+#        id: neumerlin_magnolia_google_maps:components/google-maps
+#      google-directions:
+#        id: neumerlin_magnolia_google_maps:components/google-directions
+  footer:
+    editable: true
+title: NML Standard

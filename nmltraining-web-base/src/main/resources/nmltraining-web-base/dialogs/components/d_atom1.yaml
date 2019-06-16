@@ -1,0 +1,23 @@
+form:
+  tabs:
+    - name: Atom
+      fields:
+        - name: title
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          fieldType: text
+        - name: title2
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          fieldType: text  
+    - name: Atom_img
+      fields:
+        - name: img
+          class: info.magnolia.dam.app.ui.field.definition.DamUploadFieldDefinition 
+          fieldType: damUpload
+          binaryNodeName: jcr:atom_img
+          allowedMimeTypePattern: image.*
+          editFileName: true      
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition

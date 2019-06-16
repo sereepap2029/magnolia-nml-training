@@ -1,0 +1,10 @@
+templateScript: /nmltraining-web-base/templates/pages/dummy-page.ftl
+renderType: freemarker
+visible: true
+dialog: nmltraining-web-base:pages/dummy-page-properties
+areas:
+  main:
+    renderType: freemarker
+    availableComponents:
+      dummy-component:
+        id: nmltraining-web-base:components/dummy-component

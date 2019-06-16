@@ -1,0 +1,31 @@
+# Prototype for every pages
+
+dialog: mte:pages/pageProperties
+class: info.magnolia.module.site.templates.PrototypeTemplateDefinition
+
+templateScript: /nmltraining-web-base/templates/pages/main.ftl
+renderType: site
+type: feature
+
+jsFiles:  
+#  - link: /.resources/travel-demo-theme/js/viewport-units-buggyfill.js
+#    addFingerPrint: true
+
+areas:
+  htmlHeader:
+    createAreaNode: false
+    renderType: freemarker
+    templateScript: /nmltraining-web-base/templates/pages/areas/htmlHeader.ftl
+    type: noComponent
+  main:
+    type: list
+  footer:
+    editable: false
+    templateScript: /nmltraining-web-base/templates/pages/areas/footer.ftl
+    type: noComponent
+  navigation:
+    createAreaNode: false
+    #modelClass: neumerlingroup.model.NavigationAreaModel
+    renderType: freemarker
+    templateScript: /nmltraining-web-base/templates/pages/areas/navigation.ftl
+    type: noComponent
