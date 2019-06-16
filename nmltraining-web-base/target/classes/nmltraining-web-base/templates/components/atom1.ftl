@@ -5,6 +5,7 @@
 [#assign currentNode = cmsfn.asJCRNode(content)/]
 [#assign image1 = cmsfn.getNode(atom_img)/]
 [#assign image1_link = imgfn.getImageVariationLinkFromBinary(image1,'original')/]
+[#assign searchResult = searchfn.searchContent("nmlProducts","*","/","mt:nmlProduct")/]
 [#-- Render --]
 <div>
 	<h1>
@@ -13,6 +14,16 @@
 	<h1>
 		${text2!"please insert text2"}
 	</h1>	
+	[#if searchResult?size>0]
+		[#list searchResult as result]
+		[#assign imgLink = damfn.getAssetLink(result.product_img_link)/]
+		<div>${result.product_id!""}</div>
+		<div>${result.@name!""}</div><!-- node ID -->
+		<div>${result.product_name!""}</div>
+		<div>${result.product_img_link!""}</div>
+		<img src="${imgLink!""}">
+		[/#list]
+	[/#if]
 	<div>
 		<img src="${image1_link!""}" alt="no image">
 	</div>
