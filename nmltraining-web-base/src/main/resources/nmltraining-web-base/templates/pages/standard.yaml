@@ -29,7 +29,7 @@ areas:
         id: mtk:components/teaser
       pageIntro:
         id: mtk:components/pageIntro      
-      Atom1:
+      atom1:
         id: nmltraining-web-base:components/atom1    
 #      google-maps:
 #        id: neumerlin_magnolia_google_maps:components/google-maps
